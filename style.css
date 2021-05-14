@@ -1,0 +1,428 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    font-family: Farro;
+}
+
+/* NAVBER SECTION */
+.logo{
+    border: solid white;
+    width: 10%;
+    color: white;
+    border-radius: 50%;
+}
+
+.link-iterm{
+    display: flex;
+    list-style: none;
+    color: white;
+    text-align: center;
+}
+.navbar-toggler{
+    color: white;
+    background-color: white;
+}
+.fa-twitter{
+  color: white;
+  margin: 10px;
+
+}
+.fa-linkedin{
+    color: blue;
+    margin: 10px;
+}
+.fa-github{
+    color: white;
+    margin: 10px;
+}
+
+.social-links{
+    display: flex;
+    list-style: none;
+}
+a:hover{
+    color: gold;
+}
+
+a{
+    color: gold;
+}
+
+/* MAIN SECTION */
+.my-header{
+    color: rgb(170, 124, 6);
+}
+
+.jonathan-imag{
+    display: none;
+    width: 100%;
+}
+
+.element{
+    float: left;
+    width: 400px;
+    height: 350px;
+    position: relative;
+    margin: 50px ;
+}
+
+.front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: all 0.5s ease;
+}
+
+.front img{
+    width: 100%;
+    height: 100%;
+}
+
+.back{
+    background: linear-gradient(to bottom right,red,yellow);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 5px solid #222;
+    z-index: -2;
+    box-sizing: border-box;
+}
+
+.pname{
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.description{
+    margin: 20px 0;
+}
+
+.back-content{
+    padding: 0 70px;
+}
+
+.icons .fa{
+    font-weight: bold;
+    font-size: 22px;
+    margin: 0 5px;
+}
+
+/* elem */
+
+.element .back-content{
+    transform: scale(0);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.element:hover .front{
+    width: 100px;
+    height: 100px;
+    left: calc(100% - 50px);
+    top: calc(50% - 50px);
+  
+}
+
+.element:hover .front img{
+    border-radius: 50px;
+    /* box-shadow: 0 0 20px blue, 0 0 40px black; */
+    box-shadow: 0 0 0 5px #fff;
+}
+
+.element:hover .back-content{
+    transform: scale(1);
+    opacity: 1;
+}
+
+.my-image{
+    width: 70%;
+    height: 89%;
+    border-radius: 50%;
+    position: relative;
+    left: 20%;
+}
+
+.getintouch-btn{
+    padding: 0.7rem 3rem 0.7rem 3rem;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: gray;
+    color: white;
+    border: none;
+}
+
+.getintouch-btn:hover{
+    padding: 0.7rem 3rem 0.7rem 3rem;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: black;
+    color: white;
+    border: solid 1px white;
+    transition: ease-in-out 0.3s;
+    color: rgb(170, 124, 6);
+}
+
+.my-para{
+    color: white;
+}
+
+/* I CAN HELP SECTION */
+.my-rower{
+    background-image: url('./image/Meteorite_bg1.svg');
+    background-repeat: no-repeat;
+    background-size: 600px;
+}
+
+.research-col,.design-col,.develop-col{
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+
+@keyframes example {
+    0%   {background-color:red;}
+    50%  {background-color:blue;}
+    75%  {background-color:green;}
+    100% {background-color:red;}
+  }
+
+.icanHelp-head{
+    color: rgb(170, 124, 6);
+}
+
+.sevice-head{
+    color: rgb(170, 124, 6);
+}
+
+.design{
+    color: rgb(170, 124, 6);
+}
+
+.develop{
+    color: rgb(170, 124, 6);
+}
+
+.research{
+    color: rgb(170, 124, 6);
+}
+
+.research-col{
+    background-color: gray;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.design-col{
+    background-color: gray;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.develop-col{
+    background-color: gray;
+    padding: 20px;
+    border-radius: 10px; 
+}
+
+/* ABOUT SECTION */
+
+.about-head{
+
+    color: rgb(170, 124, 6);
+}
+
+.opportun-para{
+    color: rgb(170, 124, 6);
+}
+
+.about-col{
+   border: solid 5px gray;
+   padding: 40px;
+}
+.about-col-2{
+    border: solid 5px gray;
+   padding: 40px;
+}
+
+.current{
+    border: solid 5px gray;
+    padding: 20px;
+    color: white;
+}
+
+
+/* CONTACT SECTION */
+.input-label{
+    color: rgb(170, 124, 6);
+    font-size: 23px;
+}
+.contact-head{
+    padding-top: 20%;
+    color: rgb(170, 124, 6);
+}
+
+.send-btn{
+    padding: 0.7rem 3rem 0.7rem 3rem;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: gray;
+    color: white;
+    border: none;
+}
+
+.send-btn:hover{
+    padding: 0.7rem 3rem 0.7rem 3rem;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: black;
+    color: white;
+    border: solid 1px white;
+    transition: ease-in-out 0.3s;
+    color: rgb(170, 124, 6);
+}
+
+@media(max-width: 768px){
+    .element{
+     display: none;
+    }
+
+    .develop,.design,.research{
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .icanHelp-head{
+        margin-top: 40px;
+    }
+    
+    .jonathan-imag{
+        display: block;
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+    
+    .link-iterm {
+        display: block;
+        text-align: start;
+        margin: 20px;
+    }
+    .child-link{
+        margin: 10px;
+    }
+    
+    .contact-para,.contact-head{
+        text-align: center;
+    }
+    
+    #main,#about{
+        text-align: center;
+    }
+    
+    .my-col{
+        padding: 20px;
+    }
+    
+    .my-rower{
+        background-image: url('./image/Meteorite_bg1.svg');
+        background-repeat: no-repeat;
+        background-size: 300px;
+    }
+    }
+
+@media(max-width: 540px){
+    .element{
+     display: none;
+    }
+    
+    .jonathan-imag{
+        display: block;
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+    
+    .link-iterm {
+        display: block;
+        text-align: start;
+        margin: 20px;
+    }
+    .child-link{
+        margin: 10px;
+    }
+    
+    .contact-para,.contact-head{
+        text-align: center;
+    }
+    
+    #main,#about{
+        text-align: center;
+    }
+    
+    .my-col{
+        padding: 20px;
+    }
+    
+    .my-rower{
+        background-image: url('./image/Meteorite_bg1.svg');
+        background-repeat: no-repeat;
+        background-size: 300px;
+    }
+    }
+
+@media(max-width: 520px){
+.element{
+ display: none;
+}
+
+.jonathan-imag{
+    display: block;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.link-iterm {
+    display: block;
+    text-align: start;
+    margin: 20px;
+}
+.child-link{
+    margin: 10px;
+}
+
+.contact-para,.contact-head{
+    text-align: center;
+}
+
+#main,#about{
+    text-align: center;
+}
+
+.my-col{
+    padding: 20px;
+}
+
+.my-rower{
+    background-image: url('./image/Meteorite_bg1.svg');
+    background-repeat: no-repeat;
+    background-size: 300px;
+}
+}
+
+
+
+
+
