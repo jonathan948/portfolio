@@ -204,7 +204,7 @@ a{
     75%  {background-color:#ffc288;}
   }
 
-  
+/*   
 @keyframes perform {
     0%   {background-color:#ca8a8b;}
     50%  {background-color:#e4d3cf;}
@@ -217,7 +217,7 @@ a{
     animation-iteration-count: infinite;
     animation-delay: 2s;
     border-radius: 30px;
-  }
+  } */
 
 .icanHelp-head{
     color: rgb(170, 124, 6);
