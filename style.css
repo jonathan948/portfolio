@@ -388,6 +388,10 @@ a{
     .my-header{
         padding-bottom: 20px;
     }
+
+    .tools-icon{
+        width: 100px;
+    }
     
     .jonathan-imag{
         display: block;
