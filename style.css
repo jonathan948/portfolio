@@ -485,6 +485,19 @@ a{
     background-repeat: no-repeat;
     background-size: 300px;
 }
+#social{
+    margin: 0 auto;
+    display: block;
+    width: 130px;
+    /* border: solid red; */
+}
+
+.social-links, li{
+    text-align: center !important;
+    margin: 0 auto !important;
+    /* margin-left: auto !important; */
+    /* margin-right: auto !important; */
+}
 }
 
 
