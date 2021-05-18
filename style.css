@@ -317,6 +317,21 @@ a{
      display: none;
     }
 
+    
+    #social{
+        margin: 0 auto;
+        display: block;
+        width: 130px;
+        /* border: solid red; */
+    }
+
+    .social-links, li{
+        text-align: center !important;
+        margin: 0 auto !important;
+        /* margin-left: auto !important; */
+        /* margin-right: auto !important; */
+    }
+
     .develop,.design,.research{
         width: 100%;
         font-size: 20px;
@@ -364,6 +379,15 @@ a{
     .element{
      display: none;
     }
+
+    .btn{
+     margin-top: 20px;
+     margin-bottom: 30px;
+    }
+
+    .my-header{
+        padding-bottom: 20px;
+    }
     
     .jonathan-imag{
         display: block;
@@ -386,6 +410,31 @@ a{
     
     #main,#about{
         text-align: center;
+    }
+
+    #social{
+        margin: 0 auto;
+        display: block;
+        width: 130px;
+        /* border: solid red; */
+    }
+
+    .social-links, li{
+        text-align: center !important;
+        margin: 0 auto !important;
+        /* margin-left: auto !important; */
+        /* margin-right: auto !important; */
+    }
+    a:hover{
+        color: gold;
+        text-align: center;
+    }
+    
+    a{
+        color: gold;
+        text-align: center;
+       margin: 0 auto;
+       display: block;
     }
     
     .my-col{
