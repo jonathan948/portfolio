@@ -7,7 +7,7 @@
 
 body{
     background-color: black;
-    font-family: Farro;
+    font-family: lato;
 }
 
 /* NAVBER SECTION */
@@ -47,16 +47,16 @@ body{
     list-style: none;
 }
 a:hover{
-    color: gold;
+    color: rgb(223, 205, 163);
 }
 
 a{
-    color: gold;
+    color: rgb(223, 205, 163);
 }
 
 /* MAIN SECTION */
 .my-header{
-    color: rgb(170, 124, 6);
+    color: rgb(223, 205, 163);
 }
 
 #main-2{
@@ -65,7 +65,7 @@ a{
 
 .jonathan-imag{
     display: none;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .element{
@@ -165,8 +165,9 @@ a{
     border-bottom-left-radius: 20px;
     border-top-right-radius: 20px;
     background-color: gray;
-    color: white;
+    color: rgb(223, 205, 163);
     border: none;
+    margin-top: 30px;
 }
 
 .getintouch-btn:hover{
@@ -177,7 +178,7 @@ a{
     color: white;
     border: solid 1px white;
     transition: ease-in-out 0.3s;
-    color: rgb(170, 124, 6);
+    color: rgb(223, 205, 163);
 }
 
 .my-para{
@@ -220,23 +221,19 @@ a{
   } */
 
 .icanHelp-head{
-    color: rgb(170, 124, 6);
-}
-
-.sevice-head{
-    color: rgb(170, 124, 6);
+    color: rgb(223, 205, 163);
 }
 
 .design{
-    color: rgb(170, 124, 6);
+    color: rgb(223, 205, 163);
 }
 
 .develop{
-    color: rgb(170, 124, 6);
+    color: rgb(223, 205, 163);
 }
 
 .research{
-    color: rgb(170, 124, 6);
+    color: rgb(223, 205, 163);
 }
 
 .research-col{
@@ -260,12 +257,11 @@ a{
 /* ABOUT SECTION */
 
 .about-head{
-
-    color: rgb(170, 124, 6);
+    color: rgb(223, 205, 163);
 }
 
 .opportun-para{
-    color: rgb(170, 124, 6);
+    color: rgb(223, 205, 163);
 }
 
 .about-col{
@@ -286,12 +282,12 @@ a{
 
 /* CONTACT SECTION */
 .input-label{
-    color: rgb(170, 124, 6);
+    color: rgb(223, 205, 163);
     font-size: 23px;
 }
 .contact-head{
     padding-top: 20%;
-    color: rgb(170, 124, 6);
+    color: rgb(223, 205, 163);
 }
 
 .send-btn{
@@ -409,6 +405,10 @@ a{
         display: block;
         padding-bottom: 30px;
         padding-top: 30px;
+        border-radius: 50%;
+        margin: 0 auto;
+        width: 80%;
+        height: 90%;
     }
     
     .link-iterm {
