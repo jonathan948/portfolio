@@ -59,6 +59,10 @@ a{
     color: rgb(170, 124, 6);
 }
 
+#main-2{
+    display: none;
+}
+
 .jonathan-imag{
     display: none;
     width: 100%;
@@ -195,18 +199,16 @@ a{
 }
 
 @keyframes example {
-    0%   {background-color:red;}
-    50%  {background-color:blue;}
-    75%  {background-color:green;}
-    100% {background-color:red;}
+    0%   {background-color:#fffbdf;}
+    50%  {background-color:#f7a440;}
+    75%  {background-color:#ffc288;}
   }
 
   
 @keyframes perform {
-    0%   {background-color:palevioletred;}
-    50%  {background-color:rgb(81, 81, 175);}
-    75%  {background-color:rgb(156, 80, 80);}
-    100% {background-color:rgb(218, 96, 96);}
+    0%   {background-color:#ca8a8b;}
+    50%  {background-color:#e4d3cf;}
+    75%  {background-color:#bdd2b6;}
   }
 
   .my-tools {
@@ -380,6 +382,16 @@ a{
      display: none;
     }
 
+    #main-2{
+        display: block;
+    }
+
+    #main{
+        display: none;
+    }
+   #my-text-col{
+       text-align: center;
+   }
     .btn{
      margin-top: 20px;
      margin-bottom: 30px;
