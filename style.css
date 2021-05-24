@@ -204,21 +204,7 @@ a{
     50%  {background-color:#f7a440;}
     75%  {background-color:#ffc288;}
   }
-
-/*   
-@keyframes perform {
-    0%   {background-color:#ca8a8b;}
-    50%  {background-color:#e4d3cf;}
-    75%  {background-color:#bdd2b6;}
-  }
-
-  .my-tools {
-    animation-name: perform;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    animation-delay: 2s;
-    border-radius: 30px;
-  } */
+   
 
 .icanHelp-head{
     color: rgb(223, 205, 163);
@@ -281,25 +267,33 @@ a{
 
 
 /* CONTACT SECTION */
-.input-label{
-    color: rgb(223, 205, 163);
-    font-size: 23px;
-}
-.contact-head{
-    padding-top: 20%;
-    color: rgb(223, 205, 163);
+
+.wrapper label{
+    display: block;
+    margin: 0.9em 0;
 }
 
-.send-btn{
+#massageField{
+    width: 50%;
+}
+
+.wrapper label input{
+    font-size: 18px;
+    padding: 0.5em;
+    width: 82% !important;
+}
+
+.wrapper input[type="submit"]{
     padding: 0.7rem 3rem 0.7rem 3rem;
     border-bottom-left-radius: 20px;
     border-top-right-radius: 20px;
     background-color: gray;
-    color: white;
+    color: rgb(223, 205, 163);
     border: none;
+    margin-top: 7px;
 }
 
-.send-btn:hover{
+.wrapper input[type="submit"] :hover{
     padding: 0.7rem 3rem 0.7rem 3rem;
     border-bottom-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -307,8 +301,14 @@ a{
     color: white;
     border: solid 1px white;
     transition: ease-in-out 0.3s;
-    color: rgb(170, 124, 6);
+    color: rgb(223, 205, 163);
 }
+
+.contact-head{
+    padding-top: 20%;
+    color: rgb(223, 205, 163);
+}
+
 
 @media(max-width: 768px){
     .element{
