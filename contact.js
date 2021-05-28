@@ -11,7 +11,7 @@ function getDataForm(e) {
 
     alert(formData.get('nameFied') + ' Your massage is sent as ' + formData.get('emailFied') + ' - ' + formData.get('massageField'));
 
-}
+} 
 
 
 document.addEventListener('DOMContentLoaded', function() {

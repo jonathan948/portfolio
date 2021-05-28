@@ -13,21 +13,109 @@
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">>
+        <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
     <title>Jonathan portfolio</title>
+
+    <style>
+        
+    @media(max-width: 540px){
+    .button-container{
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+    width: 500px;
+    height: 100px;
+}
+        }
+
+.button-container{
+    position: absolute;
+    top: 50%;
+    left: 11%;
+    transform: translate(-50%,-50%);
+    width: 20%;
+    height: 100px;
+}
+
+.button{
+    /* background: red; */
+    background-color: wheat;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 45px;
+    position: relative;
+    width: 114%;
+    height: 46%;
+    color: white;
+    text-shadow: 0 3px 5px black;
+    transition-property: all;
+    transition-duration: 0.5s;
+    overflow: hidden;
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 50px;
+    box-shadow: 0 0 10px wheat, 0 0 7px wheat;
+    margin-top: 10%;
+}
+
+.button:before,.button:after{
+    position:absolute ;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: skewX(20deg);
+    z-index: -1;
+    box-shadow: 0 0 10px wheat;
+    
+}
+
+.button:before{
+ left: -110%;
+ background: #e04e0e; 
+ transition-property: all;
+ transition-duration: 0.5s;
+ 
+}
+
+.button::after{
+    right:  -110%;
+    background: #0a486c;
+    transition-property: all;
+    transition-duration: 0.5s;
+   }
+
+/* .button:hover{
+   box-shadow: 0 0 30px red; 
+     width: 700px;
+    background: yellow; 
+    text-shadow: 0 0 7px white,;
+     border: none;
+
+}   */
+
+.button:hover::before{
+    left: -49%;
+}
+
+.button:hover::after{
+    right:  -50%;
+}
+
+
+
+    </style>
 </head>
-
 <body>
-
-    <section>
         <!-- NAVBAER SECTION -->
-        <section>
+        <section class="bg-image">
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light bg-liht">
                     <img class="logo" src="./image/Logo-me.png" alt="">
-                    <!-- <a class="navbar-brand" href="#">Navbar w/ text</a> -->
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
                         aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -38,6 +126,10 @@
                             <li><a class="m-3 child-link" href="#about">About</a></li>
                             <li><a class="m-3 child-link" href="#sevice">Service</a></li>
                             <li><a class="m-3 child-link" href="#contact">Contact</a></li>
+                            <li><a href="https://drive.google.com/file/d/1S3ESLt2d9wpfLJwh_BUS7geEF6gTcqD_/view?usp=sharing">
+                                <button type="button" class="btn   resume-btn">Resume</button>
+                            </a>
+                            </li> 
                         </ul>
                         <span class="navbar-text ml-auto text-white" id="social">
                             <ul class="social-links">
@@ -48,89 +140,92 @@
                                     </a></li>
                                 <li><a href="https://github.com/jonathan948"><i class="fa fa-github"
                                             aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.instagram.com/jonathanjohn99/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>          
                             </ul>
                         </span>
                     </div>
                 </nav>
             </div>
-        </section>
 
-        <!-- MAIN SECTION -->
-        <section id="main">
-            <div class="container">
-                <div class="row mt-3" id="my-text-col">
-                    <div class="col-md-7 pt-3 mt-4">
-                        <h2 class="my-header ">Hi, I'm Jonathan, a Front-end Developer</h1>
-                            <p class="my-para">By day I create a beautiful website. By night I do digital illustration.
-                                Creative expression is what lights me up, and I'm always open to learning about new
-                                opportunities.</p>
-                            <a href="#contact">
-                                <button type="button" class="btn   getintouch-btn">Get in touch</button>
-                            </a>
-                    </div>
-                    <div class="col-md-5 my-image-col">
-                        <img class="jonathan-imag" src="./image/Jonathan me.jpg" alt="">
-                        <div class="element">
-                            <div class="front">
-                                <img src="./image/Jonathan me.jpg" alt="">
-                            </div>
-
-                            <div class="back">
-                                <div class="back-content">
-                                    <div class="pname">
-                                        Stylish Boy
+            <section id="main">
+                <div class="container">
+                    <div class="row mt-3" id="my-text-col">
+                        <div class="col-md-7 pt-3 mt-4">
+                            <h2 class="my-header ">Hi, I'm Jonathan, a Front-end Developer</h1>
+                                <p class="my-para">By day I create a beautiful website. By night I do digital illustration.
+                                    Creative expression is what lights me up, and I'm always open to learning about new
+                                    opportunities.</p>
+                                <a href="#contact">
+                                    <div class="button-container">
+                                        <div class="button">
+                                            Get in touch
+                                        </div>
                                     </div>
-                                    <div class="description">
-                                        <p class="">I'm Jonathan, a Front-end Developer. </p>
+    
+                                </a>
+                        </div>
+                        <div class="col-md-5 my-image-col">
+                            <img class="jonathan-imag" src="./image/Jonathan me.jpg" alt="">
+                            <div class="element">
+                                <div class="front">
+                                    <img src="./image/Jonathan me.jpg" alt="">
+                                </div>
+    
+                                <div class="back">
+                                    <div class="back-content">
+                                        <div class="pname">
+                                            Stylish Boy
+                                        </div>
+                                        <div class="description">
+                                            <p class="">I'm Jonathan, a Front-end Developer nice meeting you. </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+    
                 </div>
+            </section>
 
-                <h2 class="icanHelp-head">I can help you with</h2>
-
-            </div>
-        </section>
-        <section id="main-2">
-            <div class="container">
-                <div class="row mt-3" id="my-text-col">
-                    <div class="col-md-5 my-image-col">
-                        <img class="jonathan-imag" src="./image/Jonathan me.jpg" alt="">
-                        <div class="element">
-                            <div class="front">
-                                <img src="./image/Jonathan me.jpg" alt="">
-                            </div>
-
-                            <div class="back">
-                                <div class="back-content">
-                                    <div class="pname">
-                                        Stylish Boy
-                                    </div>
-                                    <div class="description">
-                                        <p class="">I'm Jonathan, a Front-end Developer. <br> Folow me on this</p>
+            <section id="main-2">
+                <div class="container">
+                    <div class="row mt-3" id="my-text-col">
+                        <div class="col-md-5 my-image-col">
+                            <img class="jonathan-imag" src="./image/Jonathan me.jpg" alt="">
+                            <div class="element">
+                                <div class="front">
+                                    <img src="./image/Jonathan me.jpg" alt="">
+                                </div>
+    
+                                <div class="back">
+                                    <div class="back-content">
+                                        <div class="pname">
+                                            Stylish Boy
+                                        </div>
+                                        <div class="description">
+                                            <p class="">I'm Jonathan, a Front-end Developer. <br> Folow me on this</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+    
+                        <div class="col-md-7 pt-3 mt-4">
+                            <h2 class="my-header ">Hi, I'm Jonathan, a Front-end Developer</h1>
+                                <p class="my-para">By day I create a beautiful website. By night I do digital illustration.
+                                    Creative expression is what lights me up, and I'm always open to learning about new
+                                    opportunities.</p>
+                                <a href="#contact">
+                                    <button type="button" class="btn   getintouch-btn">Get in touch</button>
+                                </a>
+                        </div>
+    
                     </div>
-
-                    <div class="col-md-7 pt-3 mt-4">
-                        <h2 class="my-header ">Hi, I'm Jonathan, a Front-end Developer</h1>
-                            <p class="my-para">By day I create a beautiful website. By night I do digital illustration.
-                                Creative expression is what lights me up, and I'm always open to learning about new
-                                opportunities.</p>
-                            <a href="#contact">
-                                <button type="button" class="btn   getintouch-btn">Get in touch</button>
-                            </a>
-                    </div>
-
+    
+    
                 </div>
-
-                <h2 class="icanHelp-head">I can help you with</h2>
-
-            </div>
+            </section>
         </section>
 
 
@@ -138,6 +233,7 @@
 
         <section id="sevice">
             <div class="container">
+                <h2 class="icanHelp-head">I can help you with</h2>
                 <!-- <h3 class="text-center sevice-head">Service</h3> -->
                 <div class="row p-5 pt-5 mt-5 text-center text-white my-rower">
                     <div class="col-md-4 my-col">
@@ -175,23 +271,28 @@
         </section>
 
         <!-- MY TOOLS SECTION -->
-        <section class="mt-5 pt-5">
+        <section class="mt-5 pt-5 too-img">
             <div class="container">
                 <h1 class="p-3 text-center text-white">My Tools.</h1>
                 <div class="row  my-tools d-flex justify-content-center">
-                    <div class="col-4 mb-5 mt-5 d-flex justify-content-center">
+                    <div class="col-3 mb-5  d-flex justify-content-center">
                         <img class="tools-icon" src="./image/html-5.svg" alt="" width="200px">
                     </div>
-                    <div class="col-4 mt-5 mb-5 d-flex justify-content-center">
-                        <img class="tools-icon" src="./image/css.svg" alt="" width="200px">
+                    <div class="col-3  mb-5 d-flex justify-content-center">
+                        <img class="tools-icon" src="./image/css-removebg.png" alt="" width="200px">
 
                     </div>
-                    <div class="col-4 mt-5 mb-5 d-flex justify-content-center">
-                        <img class="tools-icon" src="./image/javascript.png" alt="" width="200px">
+                    <div class="col-3  mb-5 d-flex justify-content-center">
+                        <img class="tools-icon" src="./image/bootstrap-removebg.png" alt="" width="200px">
+
+                    </div>
+                    <div class="col-3  mb-5  d-flex justify-content-center">
+                        <img class="tools-icon" src="./image/js-removebg-preview.png" alt="" width="200px">
 
                     </div>
                 </div>
             </div>
+
         </section>
 
         <!-- ABOUT SECTION -->
@@ -264,6 +365,8 @@
                                 </label>
     
                                 <input type="submit" value="submit" name="submit">
+
+                              
                             </form>
                         </div>
                         
@@ -280,7 +383,7 @@
                 </div>
             </footer>
         </section>
-    </section>
+  
 
     <script src="contact.js"></script>
 

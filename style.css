@@ -11,6 +11,34 @@ body{
 }
 
 /* NAVBER SECTION */
+
+.bg-image{
+    background-image: url("./image/adobe.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /* height: 50vh; */
+}
+
+.resume-btn{
+    padding: 0.3rem 1rem 0.3rem 1rem;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: gray;
+    color: rgb(223, 205, 163);
+    border: none;
+    /* margin-top: 30px; */
+}
+
+.resume-btn:hover{
+    padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: black;
+    color: white;
+    border: solid 1px white;
+    transition: ease 0.3s;
+    color: rgb(223, 205, 163);
+}
 .logo{
     border: solid white;
     width: 10%;
@@ -32,6 +60,11 @@ body{
   color: white;
   margin: 10px;
 
+}
+
+.fa-instagram{
+    color: rgb(189, 98, 98);
+    margin: 10px;
 }
 .fa-linkedin{
     color: blue;
@@ -181,6 +214,8 @@ a{
     color: rgb(223, 205, 163);
 }
 
+
+
 .my-para{
     color: white;
 }
@@ -200,14 +235,15 @@ a{
 }
 
 @keyframes example {
-    0%   {background-color:#fffbdf;}
-    50%  {background-color:#f7a440;}
-    75%  {background-color:#ffc288;}
+    0%   {background-color:#d4c971;}
+    50%  {background-color:#b48a56;}
+    75%  {background-color:#b38a64;}
   }
    
 
 .icanHelp-head{
     color: rgb(223, 205, 163);
+    margin-top: 40px;
 }
 
 .design{
@@ -238,6 +274,14 @@ a{
     background-color: gray;
     padding: 20px;
     border-radius: 10px; 
+}
+
+/* TOOLS SECTION */
+.too-img{
+    background-image: url("./image/Programmer.jpg");
+    background-repeat: no-repeat;
+    /* background-size: 100%;
+    height: 60vh; */
 }
 
 /* ABOUT SECTION */
@@ -290,7 +334,7 @@ a{
     margin-top: 7px;
 }
 
-.wrapper input[type="submit"] :hover{
+.wrapper input[type="submit"]:hover{
     padding: 0.7rem 3rem 0.7rem 3rem;
     border-bottom-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -303,21 +347,150 @@ a{
 
 .contact-head{
     padding-top: 20%;
-    color: rgb(223, 205, 163);
+    color: rgb(87, 74, 43);
 }
 
+@media(max-width: 540px){
+    .element{
+     display: none;
+    }
+    #main-2{
+        display: block;
+    }
+    #main{
+        display: none;
+    }
+   #my-text-col{
+       text-align: center;
+   }
+    .btn{
+     margin-top: 20px;
+     margin-bottom: 30px;
+    }
+
+    .my-header{
+        padding-bottom: 20px;
+    }
+    .tools-icon{
+        width: 100px;
+    }
+    
+    .jonathan-imag{
+        display: block;
+        padding-bottom: 30px;
+        padding-top: 30px;
+        /* border-radius: 50%; */
+        margin: 0 auto;
+        width: 100%;
+        /* height: 500px; */
+    }
+    
+    .link-iterm {
+        display: block;
+        text-align: start;
+        margin: 20px;
+    }
+    .child-link{
+        margin: 10px;
+    }
+    
+    .contact-para,.contact-head{
+        text-align: center;
+    }
+    
+    #main,#about{
+        text-align: center;
+    }
+
+    #social{
+        margin: 0 auto;
+        display: block;
+        width: 130px;
+        /* border: solid red; */
+    }
+
+    .social-links, li{
+        text-align: center !important;
+        margin: 0 auto !important;
+        /* margin-left: auto !important; */
+        /* margin-right: auto !important; */
+    }
+    a:hover{
+        color: gold;
+        text-align: center;
+    }
+
+    .social-links {
+        background-color: black;
+        padding-right: 20px;
+        border-radius: 10px;
+    }
+    
+    a{
+        color: gold;
+        text-align: center;
+       margin: 0 auto;
+       display: block;
+    }
+    
+    .my-col{
+        padding: 20px;
+    }
+    
+    .my-rower{
+        background-image: url('./image/Meteorite_bg1.svg');
+        background-repeat: no-repeat;
+        background-size: 300px;
+    }
+
+    .too-img{
+        background-image: url("./image/Programmer.jpg");
+        background-repeat: no-repeat;
+        /* background-size: 100%; */
+        /* height: 50vh; */
+    }
+
+    .bg-image{
+        background-image: url("./image/adobe.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    }
 
 @media(max-width: 768px){
     .element{
      display: none;
     }
 
+    /* .bg-image{
+        background-image: url("./image/program.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 50vh;
+    } */
+
+    .jonathan-imag{
+        display: block;
+        padding-bottom: 30px;
+        padding-top: 30px;
+        /* border-radius: 50%; */
+        margin: 0 auto;
+        width: 100%;
+        /* height: 500px; */
+    }
     
     #social{
         margin: 0 auto;
         display: block;
         width: 130px;
         /* border: solid red; */
+    }
+
+    .social-links {
+        background-color: black;
+        padding-right: 20px;
+        border-radius: 10px;
     }
 
     .social-links, li{
@@ -363,105 +536,16 @@ a{
         padding: 20px;
     }
     
-    .my-rower{
-        background-image: url('./image/Meteorite_bg1.svg');
+    .bg-image{
+        background-image: url("./image/adobe.jpg");
         background-repeat: no-repeat;
-        background-size: 300px;
+        /* background-size: 100% 100%; */
     }
     }
 
-@media(max-width: 540px){
-    .element{
-     display: none;
-    }
 
-    #main-2{
-        display: block;
-    }
 
-    #main{
-        display: none;
-    }
-   #my-text-col{
-       text-align: center;
-   }
-    .btn{
-     margin-top: 20px;
-     margin-bottom: 30px;
-    }
-
-    .my-header{
-        padding-bottom: 20px;
-    }
-
-    .tools-icon{
-        width: 100px;
-    }
-    
-    .jonathan-imag{
-        display: block;
-        padding-bottom: 30px;
-        padding-top: 30px;
-        /* border-radius: 50%; */
-        margin: 0 auto;
-        width: 340px;
-        /* height: 500px; */
-    }
-    
-    .link-iterm {
-        display: block;
-        text-align: start;
-        margin: 20px;
-    }
-    .child-link{
-        margin: 10px;
-    }
-    
-    .contact-para,.contact-head{
-        text-align: center;
-    }
-    
-    #main,#about{
-        text-align: center;
-    }
-
-    #social{
-        margin: 0 auto;
-        display: block;
-        width: 130px;
-        /* border: solid red; */
-    }
-
-    .social-links, li{
-        text-align: center !important;
-        margin: 0 auto !important;
-        /* margin-left: auto !important; */
-        /* margin-right: auto !important; */
-    }
-    a:hover{
-        color: gold;
-        text-align: center;
-    }
-    
-    a{
-        color: gold;
-        text-align: center;
-       margin: 0 auto;
-       display: block;
-    }
-    
-    .my-col{
-        padding: 20px;
-    }
-    
-    .my-rower{
-        background-image: url('./image/Meteorite_bg1.svg');
-        background-repeat: no-repeat;
-        background-size: 300px;
-    }
-    }
-
-@media(max-width: 520px){
+@media(max-width: 360px){
 .element{
  display: none;
 }
@@ -497,6 +581,13 @@ a{
     background-image: url('./image/Meteorite_bg1.svg');
     background-repeat: no-repeat;
     background-size: 300px;
+}
+
+.bg-image{
+    background-image: url("./image/adobe.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 120%;
+    height: 100%;
 }
 #social{
     margin: 0 auto;
