@@ -367,6 +367,13 @@ a{
      margin-top: 20px;
      margin-bottom: 30px;
     }
+    .tools-icon{
+        width: 100px;
+    }
+
+    .tools-icon-{
+        width: 80px;
+    }
 
     .my-header{
         padding-bottom: 20px;
