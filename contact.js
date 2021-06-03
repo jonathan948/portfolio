@@ -12,12 +12,17 @@ function getDataForm(e) {
     alert(formData.get('nameFied') + ' Your massage is sent as ' + formData.get('emailFied') + ' - ' + formData.get('massageField'));
 
 } 
-
-
+ 
 document.addEventListener('DOMContentLoaded', function() {
     submitInput.addEventListener('click', getDataForm, false);
 }, false);
 
+
+// const myHeader = document.querySelector('.my-header');
+// const myPara = document.querySelector('.my-para');
+
+// const tl = new TimelineMax();
+// tl.fromTo(my-header,1, {left: "0%"}, {left: '80%'})
 
 
 

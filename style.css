@@ -90,7 +90,47 @@ a{
 /* MAIN SECTION */
 .my-header{
     color: rgb(223, 205, 163);
-}
+    overflow: hidden;
+    white-space: nowrap;
+   animation: type 14s steps(80);
+   animation-delay: 0.2s;
+   animation-iteration-count: infinite;
+   border-right: 4px solid;
+   width: 30ch;
+   /* border: solid; */
+
+  }
+
+
+  .my-para{
+    color: rgb(223, 205, 163);
+    overflow: hidden;
+    white-space: nowrap;
+   animation: para 15s steps(170); 
+   animation-iteration-count: infinite;
+  
+  }
+
+  @keyframes para {
+      0%{
+          width: 0ch;
+      }
+
+      100%{
+          width: 70ch;
+      }
+  }
+  
+  @keyframes type {
+      0%{
+          width:0ch;
+      }
+  
+      100%{
+          width:80ch;
+      }
+  }
+
 
 #main-2{
     display: none;
@@ -227,6 +267,8 @@ a{
     background-size: 600px;
 }
 
+
+
 .research-col,.design-col,.develop-col{
     animation-name: example;
     animation-duration: 4s;
@@ -348,6 +390,22 @@ a{
 .contact-head{
     padding-top: 20%;
     color: rgb(87, 74, 43);
+    animation: contac 8s steps(50);
+    overflow: hidden;
+    white-space: nowrap;
+    animation-iteration-count: infinite;
+    text-transform: capitalize;
+
+}
+
+@keyframes contac {
+    0%{
+        width: 0ch;
+    }
+
+    100%{
+        width: 20ch;
+    }
 }
 
 @media(max-width: 540px){
@@ -464,6 +522,32 @@ a{
     }
 
     }
+
+    .my-header1{
+        color: rgb(223, 205, 163);
+        overflow: hidden;
+        white-space: nowrap;
+       animation: type 7s steps(31);
+       width: 100%;
+       font-size: 24px;
+       border-right: 4px solid;
+       width: 21ch;
+      }
+    
+      @keyframes type {
+        0%{
+            width: 0ch;
+        }
+    
+        100%{
+            width:31ch;
+        }
+    }
+
+    .my-para1{
+      color: white;
+      }
+    
 
 @media(max-width: 768px){
     .element{
