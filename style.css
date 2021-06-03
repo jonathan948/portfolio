@@ -92,8 +92,7 @@ a{
     color: rgb(223, 205, 163);
     overflow: hidden;
     white-space: nowrap;
-   animation: type 14s steps(80);
-   animation-delay: 0.2s;
+   animation: type 10s steps(80);
    animation-iteration-count: infinite;
    border-right: 4px solid;
    width: 30ch;
@@ -106,8 +105,9 @@ a{
     color: rgb(223, 205, 163);
     overflow: hidden;
     white-space: nowrap;
-   animation: para 15s steps(170); 
+   animation: para 10s steps(170); 
    animation-iteration-count: infinite;
+   animation-delay: 0.2s;
   
   }
 
