@@ -12,10 +12,14 @@ body{
 
 /* NAVBER SECTION */
 
+
+
 .bg-image{
     background-image: url("./image/adobe.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
+    z-index: -1;
+
     /* height: 50vh; */
 }
 
@@ -81,10 +85,12 @@ body{
 }
 a:hover{
     color: rgb(223, 205, 163);
+    text-decoration: none;
 }
 
 a{
     color: rgb(223, 205, 163);
+    text-decoration: none;
 }
 
 /* MAIN SECTION */
@@ -98,27 +104,6 @@ a{
    width: 30ch;
    /* border: solid; */
 
-  }
-
-
-  .my-para{
-    color: rgb(223, 205, 163);
-    overflow: hidden;
-    white-space: nowrap;
-   animation: para 10s steps(170); 
-   animation-iteration-count: infinite;
-   animation-delay: 0.2s;
-  
-  }
-
-  @keyframes para {
-      0%{
-          width: 0ch;
-      }
-
-      100%{
-          width: 70ch;
-      }
   }
   
   @keyframes type {
